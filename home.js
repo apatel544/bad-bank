@@ -1,8 +1,14 @@
 function Home() {
-  const ctx = React.useContext(UserContext);
   return (
-    <>
-      <h1>Home</h1>
-    </>
+    <Card
+      bgcolor="primary"
+      txtcolor="white"
+      header="BadBank Landing Page"
+      title="Welcome to the Bank"
+      text="Come and use our bank"
+      body={
+        <img src="bank.png" className="img-fluid" alt="Responsive image"></img>
+      }
+    />
   );
 }

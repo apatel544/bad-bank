@@ -3,6 +3,7 @@ function Spa() {
     <>
       <HashRouter>
         <NavBar />
+
         <UserContext.Provider
           value={{
             users: [
