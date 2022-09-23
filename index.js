@@ -8,20 +8,20 @@ function Spa() {
           value={{
             users: [
               {
-                name: "able",
-                email: "abel@mit.edu",
+                name: "ankur",
+                email: "ankur@mit.edu",
                 password: "secret",
                 balance: 100,
+                transactions: [],
               },
             ],
           }}
         >
           <Route path="/" exact component={Home} />
           <Route path="/CreateAccount/" component={CreateAccount} />
-          <Route path="/login/" component={Login} />
+          {/* <Route path="/login/" component={Login} /> */}
           <Route path="/deposit/" component={Deposit} />
           <Route path="/withdraw/" component={Withdraw} />
-          <Route path="/balance/" component={Balance} />
           <Route path="/alldata/" component={AllData} />
         </UserContext.Provider>
       </HashRouter>
